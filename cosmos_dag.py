@@ -8,7 +8,7 @@ os.makedirs(dbt_log_path, exist_ok=True)
 os.environ[DBT_LOG_PATH_ENVVAR] = dbt_log_path
 
 profile_config = ProfileConfig(
-    profiles_yml_filepath=f"{os.environ['AIRFLOW_REPO_BASE']}/dags/dbt/ipea/profiles.yml",
+    profiles_yml_filepath=f"{os.environ['AIRFLOW_REPO_BASE']}/dags/dbt/dbt_packages/ipea/profiles.yml",
     profile_name="ipea",
     target_name="prod",
 )
